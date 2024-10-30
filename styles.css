@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
     margin: 20px;
     line-height: 1.6;
     color: #000307;
@@ -53,40 +53,35 @@ h3 {
 
 .degree {
     margin-bottom: 10px;
-}
-
-.degree span {
-    font-weight: bold;
-}
-
-.degree {
     border-bottom: 1px solid #ccc; /* Divider line between degrees */
     padding: 10px 0; /* Padding above and below each degree */
 }
 
 .degree:last-child {
-    border-bottom: 0px; /* Remove the bottom border for the last degree */
+    border-bottom: 0; /* Remove the bottom border for the last degree */
 }
 
 .degree p {
     margin: 5px 0; /* Space between lines */
-}
-
-.degree strong {
-    font-size: 1.2em; /* Slightly larger font for the degree name */
-}
-.experience .job h4,
-.experience .job p {
-    margin: 5px 0; /* Reduce margin to 5px above and below */
-    line-height: 1.2; /* Optionally adjust line height for tighter spacing */
-}
-.degree p {
     display: flex; /* Use Flexbox for alignment */
     justify-content: space-between; /* Space between the degree and year */
-    align-items: center; /* Align items vertically center */
 }
 
 .year {
-    margin-left: auto; /* Push the year to the right */
     font-weight: bold; /* Optional: make year bold */
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#skillsList {
+    display: none; /* Initially hide the skills list */
+    padding-left: 20px; /* Indentation for skills */
+}
+
+#toggleSkills {
+    margin-bottom: 10px; /* Space below the button */
 }
